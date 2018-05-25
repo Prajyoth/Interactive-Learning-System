@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prajyoth.interactivelearningsystem.Welcome">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome! Lets play and learn"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="0.03"
+            android:textColor="#040303"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What do you want to do today?"
+            android:id="@+id/textView2"
+            android:layout_weight="0.03"
+            android:textSize="20dp"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Story"
+            android:id="@+id/button"
+            android:layout_weight="0.03"
+            android:onClick="selectStory" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Game"
+            android:id="@+id/button2"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*in progress*"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03" />
+
+    </LinearLayout>
+</RelativeLayout>
